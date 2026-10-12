@@ -54,7 +54,7 @@ void Library::borrowBook()
         {
             if (b.available)
             {
-                b.available = false;
+                b.available = false;    
                 cout << "Borrow success!" << endl;
             }
             else

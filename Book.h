@@ -5,16 +5,20 @@
 #include <string>
 using namespace std;
 
-class Book
+class Media//基类
 {
 public:
     string id;
     string name;
+};
+//派生类Book,公有继承Media
+class Book:public Media
+{
+public:
     bool available;
     Book(string i, string n);
     void showInfo();
 };
-
 class Library
 {
 public:
